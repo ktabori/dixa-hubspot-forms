@@ -1,7 +1,7 @@
 .hs-button-reset,
 .hs-form .hs-button {
     border: none;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Open Sans",sans-serif;
     line-height: 1;
     margin: 0;
     outline: 0;
@@ -13,10 +13,10 @@
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 12px;
-    padding: 7px 18px 7px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1em;
+    padding: 12px 32px;
     position: relative;
     text-align: center
 }
@@ -36,18 +36,20 @@ textarea.hs-input,
 select.hs-input {
     display: inline-block;
     width: 210px;
-    height: 18px;
-    padding: 4px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    height: 24px;
+    padding: 8px;
+    font-family: "Open-sans", sans-serif;
+    font-size: 16px;
     font-weight: normal;
-    line-height: 18px;
-    color: #666;
-    border: 1px solid #ccc;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px
+    line-height: 20px;
+    color: #003462;
+    background-color: #f6fdff;
+    border: 1px solid #f6fdff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    transition: 0.3s ease-out;
 }
 
 textarea.hs-input {
@@ -64,14 +66,16 @@ input.hs-input[type=radio] {
     width: auto;
     height: auto;
     padding: 0;
-    margin: 3px 0;
+    margin: 6px 0;
     line-height: normal;
     border: none
 }
 
 input.hs-input[type=file] {
-    background-color: #fff;
-    padding: initial;
+    height: auto;
+    background-color: #f6fdff;
+    padding: 12px;
+    font-family: "Open-sans", sans-serif;
     border: initial;
     line-height: initial;
     -webkit-box-shadow: none;
@@ -116,9 +120,8 @@ input.hs-input[type="search"]::-webkit-search-results-decoration {
     display: none
 }
 
-select.hs-input,
-input.hs-input[type=file] {
-    height: 27px
+select.hs-input {
+    height: 42px
 }
 
 select[multiple].hs-input {
@@ -137,23 +140,10 @@ textarea.hs-input {
     color: #bfbfbf
 }
 
-input.hs-input,
-textarea.hs-input {
-    -webkit-transition: border 0.2s linear, box-shadow 0.2s linear;
-    -moz-transition: border 0.2s linear, box-shadow 0.2s linear;
-    transition: border 0.2s linear, box-shadow 0.2s linear;
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-}
-
 input.hs-input:focus,
 textarea.hs-input:focus {
     outline: none;
-    border-color: rgba(82, 168, 236, 0.8);
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6)
+    border-color: #003462;
 }
 
 input.hs-input.error,
@@ -162,9 +152,6 @@ input.hs-input.error,
 .hs-form div.field.error .chzn-choices,
 textarea.hs-input.error {
     border-color: #c87872;
-    -webkit-box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
-    -moz-box-shadow: 0 0 3px rgba(171, 41, 32, 0.25);
-    box-shadow: 0 0 3px rgba(171, 41, 32, 0.25)
 }
 
 input.hs-input.error:focus,
@@ -173,9 +160,6 @@ input.hs-input.error:focus,
 .hs-form div.field.error .chzn-choices:focus,
 textarea.hs-input.error:focus {
     border-color: #b9554d;
-    -webkit-box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
-    -moz-box-shadow: 0 0 6px rgba(171, 41, 32, 0.5);
-    box-shadow: 0 0 6px rgba(171, 41, 32, 0.5)
 }
 
 .input-mini.hs-input,
@@ -477,7 +461,11 @@ textarea.hs-input[disabled] {
 }
 
 .hs-form {
-    margin-bottom: 18px
+    margin-bottom: 18px;
+    background-color: #f1f2f4;
+    padding: 32px;
+    border-radius: 16px;
+
 }
 
 .hs-form fieldset {
@@ -508,14 +496,14 @@ textarea.hs-input[disabled] {
 }
 
 .hs-form label {
-    padding-top: 5px;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: bold;
+    padding-top: 4px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
     float: left;
     width: 130px;
     text-align: right;
-    color: #414141
+    color: #003462
 }
 
 .hs-form .input {
@@ -641,7 +629,10 @@ textarea.hs-input[disabled] {
 }
 
 .hs-form.stacked {
-    padding-left: 20px
+    padding-left: 32px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    max-width: 500px;
 }
 
 .hs-form.stacked fieldset {
@@ -658,9 +649,9 @@ textarea.hs-input[disabled] {
     width: auto;
     font-weight: bold;
     text-align: left;
-    line-height: 20px;
+    line-height: 1.1em;
     padding-top: 0;
-    margin-bottom: 4px
+    margin-bottom: 6px
 }
 
 .hs-form.stacked .field {
@@ -686,9 +677,19 @@ textarea.hs-input[disabled] {
     padding-top: 0
 }
 
+.hs-form.stacked .hs-error-msg {
+    font-size: 10px !important;
+}
+
 .hs-form.stacked .inputs-list>li label {
     font-weight: normal;
-    padding-top: 0
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+.hs-form.stacked .hs_error_rollup .hs-main-font-element {
+    color: #c87872;
 }
 
 .hs-form.stacked div.error {
@@ -703,13 +704,6 @@ textarea.hs-input[disabled] {
     padding-left: 20px
 }
 
-.hs-form {
-    padding-left: 0px
-}
-
-.hs-form.stacked {
-    padding-left: 0px
-}
 
 .hs-form.stacked fieldset {
     padding: 0
@@ -717,54 +711,32 @@ textarea.hs-input[disabled] {
 
 .hs-form .hs-button {
     color: #fff;
-    text-shadow: 0 -1px 0 #3574e3;
-    background-color: #3574e3;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7ec8f4), color-stop(100%, #3574e3));
-    background-image: -webkit-linear-gradient(top, #7ec8f4, #3574e3);
-    background-image: -moz-linear-gradient(top, #7ec8f4, #3574e3);
-    background-image: linear-gradient(top, #7ec8f4, #3574e3);
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
-    border-top: 1px solid #64baf0;
-    border-bottom: 1px solid #1c4ed5;
-    border-right: 1px solid #468ee6;
-    border-left: 1px solid #468ee6;
-    border-radius: 4px;
-    -webkit-transition: opacity 0.15s linear;
-    -moz-transition: opacity 0.15s linear;
-    transition: opacity 0.15s linear;
+    background-color: #5644d8;
+    border-radius: 8px;
+    -webkit-transition:  0.3s ease;
+    -moz-transition:  0.3s ease;
+    transition:  0.3s ease;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none
 }
 
-.hs-form .hs-button:visited,
 .hs-form .hs-button:hover {
-    color: #fff
+    color: #fff;
+    background-color: #3f329d;
 }
 
 .hs-form .hs-button:hover:not(.inactive),
 .hs-form .hs-button:focus:not(.inactive),
 .hs-form .hs-button.hovered:not(.inactive) {
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0 0 5px #3574e3;
-    border-top: 1px solid #4db0ee;
-    border-bottom: 1px solid #1946be;
-    border-right: 1px solid #3080e3;
-    border-left: 1px solid #3080e3
+    background-color: #3f329d;
+    transform: translateY(-1px);
 }
 
 .hs-form .hs-button:active:not(.inactive):not(.link),
 .hs-form .hs-button.depressed:not(.inactive):not(.link),
 .dropdown-open>.hs-form .hs-button:not(.inactive):not(.link) {
-    background-color: #599eeb;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3574e3), color-stop(100%, #599eeb));
-    background-image: -webkit-linear-gradient(top, #3574e3, #599eeb);
-    background-image: -moz-linear-gradient(top, #3574e3, #599eeb);
-    background-image: linear-gradient(top, #3574e3, #599eeb);
-    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3), inset 0px -1px 0px rgba(255, 255, 255, 0.3);
-    border-top: 1px solid #1c4ed5;
-    border-bottom: 1px solid #4084e2;
-    border-right: 1px solid #468ee6;
-    border-left: 1px solid #468ee6
+    background-color: #5644d8;
 }
 
 .dropdown-open>.hs-form .hs-button:not(.inactive):not(.link) {
@@ -773,19 +745,8 @@ textarea.hs-input[disabled] {
 
 .hs-form .hs-button.disabled.disabled.disabled.disabled,
 .hs-form .hs-button[disabled][disabled][disabled] {
-    background-color: #6387c5;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #88b1ce), color-stop(100%, #6387c5));
-    background-image: -webkit-linear-gradient(top, #88b1ce, #6387c5);
-    background-image: -moz-linear-gradient(top, #88b1ce, #6387c5);
-    background-image: linear-gradient(top, #88b1ce, #6387c5);
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0);
-    border-top: 1px solid #7baacc;
-    border-bottom: 1px solid #5774be;
-    border-right: 1px solid #6c94c7;
-    border-left: 1px solid #6c94c7;
+    background-color: #5644d8;
     cursor: default;
-    color: #ededed;
-    text-shadow: none;
     opacity: 0.6
 }
 
@@ -838,7 +799,7 @@ textarea.hs-input[disabled] {
 
 .hs-form label {
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: "Montserrat", sans-serif
 }
 
 .hs-form label.hidden {
@@ -853,7 +814,8 @@ textarea.hs-input[disabled] {
 }
 
 .hs-form .hs-form-required {
-    color: red
+    color: #c87872;
+    margin-left: 1px;
 }
 
 .hs-form .field {
@@ -862,10 +824,19 @@ textarea.hs-input[disabled] {
 
 .hs-form .hs-richtext {
     margin-bottom: 3px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 18px;
-    font-size: 14px;
-    color: #414141
+    font-family: "Montserrat", sans-serif;
+    line-height: 16px;
+    font-size: 12px;
+    color: #003462;
+}
+
+.hs-richtext a {
+    color: #5644d8 !important;
+    text-decoration: none !important;
+}
+
+.hs-richtext a:hover {
+    color: #3f329d !important;
 }
 
 .hs-form .hs-richtext hr {
@@ -887,7 +858,7 @@ textarea.hs-input[disabled] {
 }
 
 .hs-form .inputs-list {
-    padding-left: 5px;
+    padding-left: 0px;
     list-style: none
 }
 
@@ -926,9 +897,9 @@ textarea.hs-input[disabled] {
 
 .hs-form .actions {
     background: transparent;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    padding: 17px 20px 18px 0px;
+    margin-top: 8px;
+    margin-bottom: 0px !important;
+    padding: 8px 20px 8px 0px;
     border-top: none;
     -webkit-border-radius: 0 0 3px 3px;
     -moz-border-radius: 0 0 3px 3px;
@@ -952,11 +923,11 @@ textarea.hs-input[disabled] {
     z-index: 9999;
     display: block;
     position: relative;
-    color: #333;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-bottom-color: #bbb;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    color: #003462 !important;
+    background: #f6fdff !important;
+    border: 1px solid #f1f2f4 !important;
+    border-radius: 8px;
+    font-family: "Open-sans", sans-serif !important
 }
 
 .pika-single.is-hidden {
@@ -1014,8 +985,9 @@ textarea.hs-input[disabled] {
     padding: 5px 3px;
     font-size: 14px;
     line-height: 20px;
-    font-weight: bold;
-    background-color: #fff
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif !important;
+    background-color: #f6fdff !important
 }
 
 .pika-prev,
@@ -1074,7 +1046,6 @@ textarea.hs-input[disabled] {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 0
 }
 
 .pika-table th,
@@ -1084,7 +1055,7 @@ textarea.hs-input[disabled] {
 }
 
 .pika-table th {
-    color: #999;
+    color: #003462 !important;
     font-size: 12px;
     line-height: 25px;
     font-weight: bold;
@@ -1106,24 +1077,24 @@ textarea.hs-input[disabled] {
     margin: 0;
     width: 100%;
     padding: 5px;
-    color: #666;
+    color: #003462 !important;
     font-size: 12px;
     line-height: 15px;
     text-align: right;
-    background: #f5f5f5
+    background: #f1f2f4 !important
 }
 
 .is-today .pika-button {
-    color: #3af;
+    color: #3f329d !important;
     font-weight: bold
+
 }
 
 .is-selected .pika-button {
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
-    background: #3af;
-    box-shadow: inset 0 1px 3px #178fe5;
-    border-radius: 3px
+    background: #5644d8 !important;
+    box-shadow: none !important;
 }
 
 .is-disabled .pika-button {
@@ -1133,11 +1104,10 @@ textarea.hs-input[disabled] {
     opacity: 0.3
 }
 
-.pika-button:hover {
+.fn-date-picker .pika-table .pika-button:hover {
     color: #fff !important;
-    background: #ff8000 !important;
+    background: #3f329d !important;
     box-shadow: none !important;
-    border-radius: 3px !important
 }
 
 .pika-week {
@@ -1153,7 +1123,7 @@ textarea.hs-input[disabled] {
 }
 
 .hs-form fieldset.form-columns-1 .hs-input {
-    width: 95%
+    width: 100%
 }
 
 .hs-form fieldset.form-columns-1 .input {
@@ -1162,7 +1132,8 @@ textarea.hs-input[disabled] {
 
 .hs-form fieldset.form-columns-1 input[type="checkbox"],
 .hs-form fieldset.form-columns-1 input[type="radio"] {
-    width: auto
+    width: auto;
+
 }
 
 .hs-form fieldset.form-columns-2 .hs-form-field {
@@ -1255,6 +1226,10 @@ textarea.hs-input[disabled] {
     font-weight: normal !important
 }
 
+.hs_recaptcha {
+    display: none;
+}
+
 .hsformerror .close-form-error:hover {
     color: #cc8884
 }
@@ -1282,4 +1257,4 @@ textarea.hs-input[disabled] {
     .hs-social-login {
         height: 72px
     }
-}    
+}
