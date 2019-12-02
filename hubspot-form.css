@@ -31,6 +31,10 @@ input.hs-input[type=radio] {
     cursor: pointer
 }
 
+input.hs-input[type=text] {
+    -webkit-appearance: none;
+}
+
 input.hs-input,
 textarea.hs-input,
 select.hs-input {
@@ -630,7 +634,6 @@ textarea.hs-input[disabled] {
 
 .hs-form.stacked {
     padding-left: 32px;
-    padding-right: 24px;
     padding-bottom: 24px;
     max-width: 500px;
 }
@@ -828,6 +831,11 @@ textarea.hs-input[disabled] {
     line-height: 16px;
     font-size: 12px;
     color: #003462;
+}
+
+div.hs-richtext>p {
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .hs-richtext a {
@@ -1245,6 +1253,11 @@ textarea.hs-input[disabled] {
     form.hs-form .form-columns-3 .hs-form-field .hs-input {
         width: 95%
     }
+
+    .hs-form .hs-richtext {
+        tex
+    }
+
 }
 
 @media (max-width: 422px) {
