@@ -499,6 +499,11 @@ textarea.hs-input[disabled] {
     clear: both
 }
 
+label.hs-form-booleancheckbox-display>span>p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .hs-form label {
     padding-top: 4px;
     font-size: 12px;
@@ -721,7 +726,9 @@ textarea.hs-input[disabled] {
     transition:  0.3s ease;
     -moz-user-select: none;
     -webkit-user-select: none;
-    user-select: none
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .hs-form .hs-button:hover {
@@ -834,8 +841,8 @@ textarea.hs-input[disabled] {
 }
 
 div.hs-richtext>p {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 12px !important;
+    line-height: 16px !important;
 }
 
 .hs-richtext a {
@@ -1241,6 +1248,7 @@ div.hs-richtext>p {
 .hsformerror .close-form-error:hover {
     color: #cc8884
 }
+
 
 @media (max-width: 400px),
 (min-device-width: 320px) and (max-device-width: 480px) {
