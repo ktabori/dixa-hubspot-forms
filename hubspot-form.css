@@ -65,6 +65,10 @@ html.webkit textarea.hs-input {
     padding-left: 5px
 }
 
+input.hs-input[type=tel] {
+    padding 8px 0px 8px 0px !important;
+}
+
 input.hs-input[type=checkbox],
 input.hs-input[type=radio] {
     width: auto;
