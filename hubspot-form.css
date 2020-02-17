@@ -192,6 +192,8 @@
 body .hs-button.primary,
 body input[type="submit"],
 body input[type="button"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   background-color: #5644d8;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
