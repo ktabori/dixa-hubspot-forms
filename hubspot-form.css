@@ -136,6 +136,11 @@
   list-style-type: none;
 }
 
+.wistia_responsive_padding .hs-form .hs-error-msgs label {
+  color: #ffffff;
+  font-size: 12px;
+}
+
 .hs-form .hs-form-radio span,
 .hs-form .hs-form-checkbox span{
   font-size: 16px;
@@ -209,10 +214,6 @@ body input[type="button"]:hover {
   transform: translateY(-1px);
   background-color: #3f329d;
 }
-
-body .hs-button.primary:focus,
-body input[type="submit"]:focus,
-body input[type="button"]:focus {}
 
 @media only screen and (max-width: 767px) {
   .hs-form {
