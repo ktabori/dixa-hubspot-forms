@@ -32,8 +32,7 @@ menuDropDown.forEach(item => {
   });
 });
 };
-</script>
-<script>
+
 // Prevents body scroll on mobile only (including iOS)
 (function () {
   var _overlay = document.getElementById('menucontainer');
