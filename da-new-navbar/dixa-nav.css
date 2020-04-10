@@ -53,7 +53,6 @@ overflow: hidden;
 }
 
 .dn-button-menu {
-  height: 40px;
   margin-left: 24px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
@@ -307,6 +306,7 @@ overflow: hidden;
   margin-bottom: 0px;
   color: #273759;
   font-size: 14px;
+  line-height: 1.3em;
 }
 
 .dn-dropdown-divider {
