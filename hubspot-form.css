@@ -1,12 +1,14 @@
 /* Form Field (selector for form field wrapper) */
 .hs-form {
-  background-color: #f1f2f4;
+  background-color: #ebeaed;
   padding-bottom: 32px;
   padding-top: 32px;
   padding-left: 32px;
   padding-right: 32px;
   border: 0px none transparent;
   border-radius: 16px;
+  overflow: hidden;
+  display: block;
 }
 
 .hs-form .hs-form-field,
